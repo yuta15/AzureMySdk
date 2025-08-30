@@ -1,0 +1,16 @@
+from abc import ABC, abstractmethod
+
+from src.resources.abstract.model.base_class import ResourceBase
+
+
+class ResourceBuilder(ABC):
+    @abstractmethod
+    def build_tag(self):...
+    @abstractmethod
+    def build_location(self):...
+    @abstractmethod
+    def build_resource(self):...
+    @abstractmethod
+    def build_child_resource(self):...
+    @abstractmethod
+    def get_object(self) -> ResourceBase:...
